@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Here the  JS DOM EVENTS</h1>
+    </header>
+    <main>
+        <section>
+            <button onclick="console.log(7)">CLick me</button>
+        <button onclick="console.log('details')">Click for details</button>
+        <br><br>
+        <button onclick="document.body.style.backgroundColor = 'yellow' ">Make it yellow</button>
+        <button onclick="makeRed()">Make it red</button>
+        <button id="make-blue">Make it blue</button>
+        <button id="make-pink">Make it pink</button>
+        <button id="make-green">Make it green</button>
+        </section>
+
+        <section>
+            <h1>DOM Event Handlers</h1>
+            <h3 id="handle-status">Default text</h3>
+            <button onclick="handleOnClick()">Change text</button>
+            <button id="event-listener">Handle event by addEventListener</button>
+
+            <p id="input-text-display">Default Input Text</p>
+            <input id="input-text" type="text">
+            <button id="btn-update">Update</button>
+        </section>
+
+        <section>
+            <h1>Add your comment</h1>
+            <div id="comment">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur ab quas praesentium sapiente quae libero atque laboriosam officia neque.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur ab quas praesentium sapiente quae libero atque laboriosam officia neque.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur ab quas praesentium sapiente quae libero atque laboriosam officia neque.</p>
+            </div>
+            <div>
+                <textarea name="" id="new-comment"></textarea><br>
+                <button id="post-btn">Post</button>
+            </div>
+        </section>
+
+        <section>
+            <h1>Explore More Events</h1>
+            <h3 id="secret-text">My secret text</h3>
+            <input type="text" placeholder="Please type delete" name="" id="input-secret">
+            <button id="btn-dlt" disabled>Delete</button>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
